@@ -1,5 +1,5 @@
 const LayoutPrivate = () =>{
-    return "LayoutPrivate";
+    return "Dashboard";
 }
 
 export default LayoutPrivate;
