@@ -1,11 +1,19 @@
+import {useNavigate} from "react-router-dom";
 import {useUserContext} from "../context/UserContext";
 
 
 const Home = () =>{
 
-    const {user, setUser} = useUserContext()
+    const { setUser} = useUserContext();
+
+    const navigate = useNavigate()
+
     const handleLogin = () =>{
-        setUser(true);
+        setUser({
+            name: "Polo",
+            email: "polo@test.com",
+        });
+        navigate('/dashboard')
     };
 
     return (
